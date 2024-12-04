@@ -1,0 +1,16 @@
+[package]
+name = "cis1905-finalproj-2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14"
+bevy_ggrs = { version = "0.16"}
+bevy_matchbox = { version = "0.10", features = ["ggrs"] }
+bevy_asset_loader = "0.21.0"
+bevy_roll_safe = "0.3.0"
+rand_xoshiro = "0.6.0"
+rand = "0.8.5"
+
+[profile.dev.package."*"]
+opt-level = 2
